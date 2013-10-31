@@ -193,6 +193,7 @@ input[type="submit"]:active {
 	background-color: #ffffff;
 }
 #slide1 h1 {
+    text-align: center;    
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	color: #323232;
@@ -212,7 +213,6 @@ input[type="submit"]:active {
 	color: #fff;
 	padding-bottom: 20px;
 	font-weight: 100;
-	width: 360px;
 	font-style: italic;
 }
 /* Slide 2 */ 
@@ -417,3 +417,55 @@ input[type="submit"]:active {
 
 }*/
 
+
+
+
+
+
+
+/*schedule list*/
+
+
+
+.list-container{
+    max-width: 350px;
+    margin: auto;
+    text-align: left; 
+    border: 1px solid #ccc;
+}
+
+.list ul  {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.list li {
+	color: #333;
+	list-style-type: none;
+	padding: 12px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.list ul li:hover { 
+	background-color: #ededed; 
+	transition: background .3s ease-in-out;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	-o-transition: background .3s ease-in-out;
+	}
+    
+.time { 
+	color: #FFF;
+	font-weight: bold; 
+	padding: 8px; 
+	margin-right: 4px;
+	background: #da0010;
+	background-color: #da0010;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+    
