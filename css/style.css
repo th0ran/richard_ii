@@ -105,7 +105,6 @@ input[type="submit"]:active {
 }
 #logo {
 	width: 155px;
-	height: 116px;
 }
 #logo img {
 	max-width: 300%;
@@ -213,7 +212,11 @@ input[type="submit"]:active {
 /* Slide 1 */ 
 
 #slide1 {
+	padding-top: 100px;
 	background-color: #ffffff;
+	background-image:url(../images/bg-head.png);
+	background-repeat:no-repeat;
+	background-position: right bottom; 
 }
 #slide1 h1 {
 	text-align: center;
