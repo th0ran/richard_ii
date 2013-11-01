@@ -418,7 +418,7 @@ input[type="submit"]:active {
 	left: 20%;
 	padding: 5px 15px;
 	position: absolute;
-	z-index: 98;
+	z-index: 99998;
 	width: 220px;
 }
 .tooltip:hover:before {
@@ -429,7 +429,7 @@ input[type="submit"]:active {
 	content: "";
 	left: 50%;
 	position: absolute;
-	z-index: 99;
+	z-index: 99999;
 }
 .circle {
 	color: #fff;
