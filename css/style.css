@@ -42,6 +42,7 @@ input[type="school"], input[type="text"] {
 	border-radius: 30px;
 }
 input[type="text"]:hover, input[type="school"]:hover {
+<<<<<<< HEAD
 	color: green;
 	background: #f5f5f5;
 	background-color: #f5f5f5;
@@ -65,12 +66,17 @@ input[type="postcode"] {
 	float: right;
 }
 input[type="postcode"]:hover {
+=======
+>>>>>>> 41222439304deff9eddf0be3283b483aba9b2928
 	color: green;
 	background: #f5f5f5;
 	background-color: #f5f5f5;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 41222439304deff9eddf0be3283b483aba9b2928
 =======
 >>>>>>> 41222439304deff9eddf0be3283b483aba9b2928
 input[type="submit"] {
