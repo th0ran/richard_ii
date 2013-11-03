@@ -419,4 +419,32 @@
 	margin-top: 120px;
 	margin-left: 150px;
 }
+
+.list-container {
+	max-width: 615px;
+}
+}
+
+
+ @media screen and (max-width: 900px) {
+/*responsive slider*/
+.ls-wrapper .liquid-slider .panel {
+	height: 400px;
+}
+.panel-wrapper {
+	max-width: 400px;
+}
+.ls-wrapper .ls-nav-right-arrow {
+	margin-top: 120px;
+	margin-right: 150px;
+}
+.ls-wrapper .ls-nav-left-arrow {
+	margin-top: 120px;
+	margin-left: 150px;
+}
+
+.list-container {
+	max-width: 415px;
+}
+
 }

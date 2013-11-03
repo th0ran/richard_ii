@@ -122,7 +122,7 @@ input[type="submit"]:active {
 	padding: 10px;
 	margin: 15px 0;
 	width: 85px;
-	text-indent: 100%;
+	text-indent: 9999%;
 	white-space: nowrap;
 	overflow: hidden;
 }
@@ -392,10 +392,13 @@ input[type="submit"]:active {
 	margin-right: auto;
 	z-index: 200;
 }
+
+#head-text-logo{
+	 max-width: 250px; 
+	 margin-bottom:130px;
+}
+
 /*schedule list*/
-
-
-
 .list-container {
 	max-width: 715px;
 	margin: auto;
@@ -478,11 +481,6 @@ input[type="submit"]:active {
 	opacity: 0.9;
 }
 }
- @media screen and (max-width: 1050px) {
-.list-container {
-	max-width: 450px;
-}
-}
  @media screen and (max-width: 1000px) {
 .container {
 	width: 80%;
@@ -492,6 +490,20 @@ input[type="submit"]:active {
 }
  @media screen and (max-width: 750px) {
 .fixed {
-	position: inherit;
+	/*position: inherit;*/
 }
+.navigation li {
+	float: none;
+	color: #fff;
+	padding: 10px;
+	margin: 0;
+	width: 85px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#head-text-logo{
+	 margin-bottom:170px;
+}
+
 }
