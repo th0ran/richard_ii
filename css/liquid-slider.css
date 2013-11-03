@@ -94,13 +94,10 @@
 	display: block;
 	float: left;
 }
-
-.panel-wrapper{
+.panel-wrapper {
 	max-width: 700px;
 	margin: auto;
 }
-
-
 /******************************************************
 * These provide a base starting point for images and
 * video. However, you will have to add more rules
@@ -405,19 +402,15 @@
 * query for retina AND a certain size if you want. Go Nuts.
 ******************************************************************/
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),  only screen and (min--moz-device-pixel-ratio: 1.5),  only screen and (min-device-pixel-ratio: 1.5) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
 }
-
-
  @media screen and (max-width: 1190px) {
 /*responsive slider*/
 .ls-wrapper .liquid-slider .panel {
 }
-
-.panel-wrapper{
+.panel-wrapper {
 	max-width: 500px;
 }
-
 .ls-wrapper .ls-nav-right-arrow {
 	margin-top: 120px;
 	margin-right: 150px;
@@ -425,6 +418,5 @@
 .ls-wrapper .ls-nav-left-arrow {
 	margin-top: 120px;
 	margin-left: 150px;
-	
 }
 }
