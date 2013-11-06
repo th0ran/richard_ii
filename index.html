@@ -113,15 +113,27 @@ Only one question of 140 character limit can submitted at a time. When you are r
         <!--      <a href="" title="Fill in this form to submit your questions" class="tooltip"><span class="circle">i</span></a>--> 
         <br />
         <br />
+<<<<<<< HEAD
         <form>
           <input type="text" name="question" placeholder="Question">
           <input type="text" name="name" placeholder="Teacher name">
+||||||| merged common ancestors
+        <form>
+          <input type="text" name="question" placeholder="Question">
+          <input type="text" name="name" placeholder="Name">
+=======
+        <form id="question_submit_form">
+          <input type="text" name="question" placeholder="Question" id="question-submit-form-body">
+          <input type="text" name="name" placeholder="Name" id="question-submit-form-name">
+>>>>>>> question_submission
           <div class="center-form">
-          <input type="school" name="school" placeholder="School">
-          <input type="school" name="postcode" placeholder="Postcode">
+          <input type="school" name="school" placeholder="School" id="question-submit-form-school_name">
+          <input type="school" name="postcode" placeholder="Postcode" id="question-submit-form-postcode">
         </form>
+
         <br />
-        <input type="submit" value="Submit Question">
+        <input type="submit" value="Submit Question" id="question-submit-btn">
+        <div id="_message">Your question has been sent. Stay tuned to see if yours gets picked!</div>
         </center>
       </div>
     </div>
@@ -195,11 +207,19 @@ The live video is an RTMP feed on port 1935 and port 80. The specific ports may 
 <script src="./js/jquery.touchSwipe.min.js"></script> 
 <script src="./js/jquery.liquid-slider-custom.min.js"></script> 
 <script>
-    $('#main-slider').liquidSlider();
+    $(document).ready(function(){
+      $('#main-slider').liquidSlider();  
+    });
     
     /* If you need to access the internal property or methods, use this:
     var api = $.data( $('#slider-id')[0], 'liquidSlider');
     */
-    </script>
+</script>
+<script type="text/javascript" src="js/question_submission.min.js"></script>
+<script>
+  // Question Submission
+    var qs = new JonLambert.RSCQuestionSubmission();
+  // */ Question Submission
+</script>
 </body>
 </html>
