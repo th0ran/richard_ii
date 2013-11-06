@@ -89,7 +89,11 @@
 *******************************************************/
 .ls-wrapper .liquid-slider .panel {
 	width: 100%;
+<<<<<<< HEAD
+	/* Do not edit below this line */
+=======
 	min-height: 400px;	/* Do not edit below this line */
+>>>>>>> 7b3bdf732ededb6fb7763056d5178406642cc67f
 	display: block;
 	float: left;
 }
