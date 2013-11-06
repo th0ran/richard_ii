@@ -111,12 +111,12 @@ To give your school’s questions the best chance of being selected, try to ensu
         <!--      <a href="" title="Fill in this form to submit your questions" class="tooltip"><span class="circle">i</span></a>--> 
         <br />
         <br />
-        <form>
-          <input type="text" name="question" placeholder="Question">
-          <input type="text" name="name" placeholder="Name">
+        <form id="question_submit_form">
+          <input type="text" name="question" placeholder="Question" id="question-submit-form-body">
+          <input type="text" name="name" placeholder="Name" id="question-submit-form-name">
           <div class="center-form">
-          <input type="school" name="school" placeholder="School">
-          <input type="school" name="postcode" placeholder="Postcode">
+          <input type="school" name="school" placeholder="School" id="question-submit-form-school_name">
+          <input type="school" name="postcode" placeholder="Postcode" id="question-submit-form-postcode">
         </form>
         <br />
         <input type="submit" value="Submit Question">
@@ -208,11 +208,22 @@ To access the stream, teaching staff should be logged in to their workstation or
 <script src="./js/jquery.touchSwipe.min.js"></script> 
 <script src="./js/jquery.liquid-slider-custom.min.js"></script> 
 <script>
-    $('#main-slider').liquidSlider();
+    $(document).ready(function(){
+      $('#main-slider').liquidSlider();  
+    });
     
     /* If you need to access the internal property or methods, use this:
     var api = $.data( $('#slider-id')[0], 'liquidSlider');
     */
-    </script>
+</script>
+<script type="text/javascript" src="js/question_submission.js"></script>
+<script>
+  // Question Submission
+    var qs = new JonLambert.RSCQuestionSubmission();
+    qs.submit_question([], function(d){
+
+    });
+  // */ Question Submission
+</script>
 </body>
 </html>
