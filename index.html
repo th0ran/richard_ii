@@ -118,8 +118,10 @@ To give your school’s questions the best chance of being selected, try to ensu
           <input type="school" name="school" placeholder="School" id="question-submit-form-school_name">
           <input type="school" name="postcode" placeholder="Postcode" id="question-submit-form-postcode">
         </form>
+
         <br />
         <input type="submit" value="Submit Question" id="question-submit-btn">
+        <div id="_message">Your question has been sent. Stay tuned to see if yours gets picked!</div>
         </center>
       </div>
     </div>
@@ -220,9 +222,6 @@ To access the stream, teaching staff should be logged in to their workstation or
 <script>
   // Question Submission
     var qs = new JonLambert.RSCQuestionSubmission();
-    qs.submit_question([], function(d){
-
-    });
   // */ Question Submission
 </script>
 </body>

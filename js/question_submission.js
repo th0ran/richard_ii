@@ -1,6 +1,11 @@
+"use strict";
+
+
 var RSCQuestionSubmission = function() {
 	var t = this;
 	var api_url = "/admin";
+
+	$("#_message").css('opacity', 0);
 
 	this.get_uri = function(uri) {
 		return api_url + '/?q=' + uri;
@@ -31,6 +36,11 @@ var RSCQuestionSubmission = function() {
 			postcode: $('#question-submit-form-postcode').val(),
 		};
 
+		if (params.school_name == "" || params.name == "" || params.body == "" || params.postcode == "") {
+			alert("Sorry! You must fill out all of the fields to submit a question.")
+			return false;
+		}
+
 		t.submit_question(params, function(d) {
 			console.log(d);
 
@@ -38,6 +48,8 @@ var RSCQuestionSubmission = function() {
 			$('#question-submit-form-name').val('')
 			$('#question-submit-form-body').val('')
 			$('#question-submit-form-postcode').val('')
+
+			t.message('Hello!')
 
 		});
 
@@ -70,14 +82,35 @@ var RSCQuestionSubmission = function() {
 
 	this.poll = function() {
 		$.get(t.get_uri('poll.json'), function(data){
-			t.perform_poll_checks(data)
+			t.perform_poll_checks(data);
 		});
-
 
 		setTimeout(t.poll, 3000);
 	}
 
 	this.poll();
+
+	this.message = function (t) {
+		var msg = $("#_message");
+
+		msg.css({
+			opacity: 0,
+			top: '-10px',
+			visibility: 'shown'
+		})
+
+		msg.stop(true, false).animate({
+			opacity: 1,
+			top: 0
+		}, 500);
+
+		setTimeout(function(){
+			msg.animate({
+				opacity: 0,
+				top: '20px',
+			}, 500)
+		}, 3000)
+	}
 }
 
 var JonLambert = {
