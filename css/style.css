@@ -175,6 +175,16 @@ input[type="submit"]:active {
 .icon-speech-bubbles:hover {
 	background-position: 3px;
 }
+
+.icon-clock {
+	background: url(../images/icons/clock.png) 3px 0 no-repeat;
+	background-position: -134px;
+	padding: 30px;
+}
+.icon-clock:hover {
+	background-position: 3px;
+}
+
 .icon-heart {
 	background: url(../images/icons/help_btn.png) 3px 0 no-repeat;
 	background-position: -134px;
@@ -258,13 +268,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', end
 }
 
 #content[role="shedule"]{
-	margin-top: -75px;	
+	margin-top: -75px;
+	margin-bottom: 40px;	
 }
 
 .shedule {
 	font-size: 14px;
 	color: #FFF;
-	max-width: 700px;
+	max-width: 650px;
 	width: 95;
 	margin: auto;
 	margin-top: 11px;
@@ -426,7 +437,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', end
 	max-width: 715px;
 	margin: auto;
 	text-align: left;
-	margin-bottom: 50px;
+	margin-bottom: 75px;
 }
 .list ul {
 	width: 100%;
