@@ -45,6 +45,39 @@ var RSCQuestionSubmission = function() {
 	}
 
 	this.add_listeners();
+
+	this.perform_poll_checks = function(d) {
+		if (d.questions_enabled) {
+			t.enable_questions();
+		} else {
+			t.disable_questions();
+		}
+	}
+
+	this.enable_questions = function() {
+		$('#question_submit_form').removeClass('disabled');
+		$('#question_submit_form').addClass('enabled');
+		$('#question-submit-btn').removeAttr('disabled')
+
+	}
+
+	this.disable_questions = function() {
+		$('#question_submit_form').addClass('disabled');
+		$('#question_submit_form').removeClass('enabled');
+		$('#question-submit-btn').attr('disabled', 'disabled')
+	}
+
+
+	this.poll = function() {
+		$.get(t.get_uri('poll.json'), function(data){
+			t.perform_poll_checks(data)
+		});
+
+
+		setTimeout(t.poll, 3000);
+	}
+
+	this.poll();
 }
 
 var JonLambert = {
