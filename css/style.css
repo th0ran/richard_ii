@@ -341,17 +341,10 @@ input[type="submit"]:active {
 
 #slide4 {
 	/* background-color:#f2f2f2; */
-	color: #ffffff;
+	color: #333;
 	width: 100%;
-	background: #da0010;
-	background-color: #da0010;
-	background-image: linear-gradient(left top, rgb(194,0,26) 25%, rgb(255,0,0) 63%);
-	background-image: -o-linear-gradient(left top, rgb(194,0,26) 25%, rgb(255,0,0) 63%);
-	background-image: -moz-linear-gradient(left top, rgb(194,0,26) 25%, rgb(255,0,0) 63%);
-	background-image: -webkit-linear-gradient(left top, rgb(194,0,26) 25%, rgb(255,0,0) 63%);
-	background-image: -ms-linear-gradient(left top, rgb(194,0,26) 25%, rgb(255,0,0) 63%);
-	background-image: -webkit-gradient( linear, left top, right bottom, color-stop(0.25, rgb(194,0,26)), color-stop(0.63, rgb(255,0,0)) );
- filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#df000e', EndColorStr='#ef0007');
+	background: #f6f6f6;
+	background-color: #f6f6f6;
 	padding-top: 120px;
 	padding-bottom: 80px;
 }
