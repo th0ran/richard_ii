@@ -547,3 +547,17 @@ _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 	margin-bottom: 170px;
 }
 }
+
+#_message {
+	width: 100%;
+	padding: 10px;
+	background: #EEE;
+	color: black;
+	margin-top: 10px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	border-radius: 20px 20px 20px 20px;
+	position: relative;
+	
+}
+
