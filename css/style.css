@@ -280,6 +280,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', end
 	margin: auto;
 	margin-top: 11px;
 	line-height: 1,6;
+	text-align: justify;
 }
 #slide1-2 h1 {
 	text-align: center;
