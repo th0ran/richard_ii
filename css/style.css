@@ -440,7 +440,7 @@ input[type="submit"]:active {
 	line-height: 2;
 }
 .list ul li:hover {
-	background-color: #aaebfe;
+	background-color: #ffb6bb;
 	transition: background .3s ease-in-out;
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
