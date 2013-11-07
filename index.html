@@ -89,11 +89,8 @@
     
   </div>
 </div>
-
 <div id="arrow_up_btn"></div>
 <div id="arrow_down_btn"></div>
-
-
 </div>
 <div class="slide" id="slide3" data-slide="3">
   <div class="container clearfix">
@@ -102,11 +99,9 @@
       <img class="heading" src="images/headings/live-stream.png" alt="Live Stream">
       <div style="width: 70%;">
         <div class='embed-container'>
-          <embed src="http://janet.streamingwizard.com/player.swf" width="900" height="520" allowscriptaccess="always" allowfullscreen="true" flashvars="streamer=rtmpt://195.195.131.195/janetvod/mp4:&amp;file=/icinnafull.mp4&amp;autostart=false" />
+          <embed  src='http://nasta.streamingwizard.com/player.swf' width='900' height='520' allowscriptaccess='always' allowfullscreen='true' flashvars='streamer=rtmp://195.195.131.195:80/raveLive&file=richard2.flv&autostart=true'/>
         </div>
-        <img class="heading" src="images/headings/click-here-for-fullscreen.png" style="margin-top: 10px;" alt="Click here for fullscreen"> 
-
-        <br>
+        <img class="heading" src="images/headings/click-here-for-fullscreen.png" style="margin-top: 10px;" alt="Click here for fullscreen"> <br>
         <br>
         <br>
         <h2>Submit a question <a href="#"  onclick="return false;" title="Fill in this form during the break for your chance to have your question answered during the live Q&A." class="tooltip"><img src="images/icons/info.png"></a> </h2>
@@ -121,7 +116,6 @@
           <input type="school" name="school" placeholder="School" id="question-submit-form-school_name">
           <input type="school" name="postcode" placeholder="Postcode" id="question-submit-form-postcode">
         </form>
-
         <br />
         <input type="submit" value="Submit Question" id="question-submit-btn">
         <div id="_message">Your question has been sent. Stay tuned to see if yours gets picked!</div>
@@ -204,8 +198,8 @@
     /* If you need to access the internal property or methods, use this:
     var api = $.data( $('#slider-id')[0], 'liquidSlider');
     */
-</script>
-<script type="text/javascript" src="js/question_submission.min.js"></script>
+</script> 
+<script type="text/javascript" src="js/question_submission.min.js"></script> 
 <script>
   // Question Submission
     var qs = new JonLambert.RSCQuestionSubmission();
