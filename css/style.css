@@ -476,7 +476,7 @@ input[type="submit"]:active {
 	z-index: 99999;
 }
 .tooltip-menu {
-	display: inline;
+	display: block;
 	position: relative;
 	font-size: 18px;
 	text-indent: 0;
@@ -489,7 +489,7 @@ input[type="submit"]:active {
 	color: #fff;
 	content: attr(title);
 	left: 20%;
-	margin-left: 110px;
+	margin-left: 92px;
 	padding: 5px 15px;
 	position: absolute;
 	z-index: 99998;
