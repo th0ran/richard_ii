@@ -32,7 +32,7 @@ var RSCQuestionSubmission = function() {
 		console.log($('#question-submit-form-body').val())
 
 		var count = 140 - $('#question-submit-form-body').val().length;
-		$('#_character_count').text(140 - $('#question-submit-form-body').val().length);
+		$('#_character_count').text(140 - $('#question-submit-form-body').val().length + " character(s) left");
 
 		if (count < 0) {
 			$('#_character_count').css('color', '#993333');
