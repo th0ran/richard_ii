@@ -22,6 +22,23 @@ var RSCQuestionSubmission = function() {
 
 	this.add_listeners = function() {
 		$('#question_submit_form').submit(t.question_form_submit);
+
+		$('#question-submit-form-body').change(function(){
+			console.log($('#question-submit-form-body').val())
+		});
+	}
+
+	this.body_changed = function() {
+		console.log($('#question-submit-form-body').val())
+
+		var count = 140 - $('#question-submit-form-body').val().length;
+		$('#_character_count').text(140 - $('#question-submit-form-body').val().length);
+
+		if (count < 0) {
+			$('#_character_count').css('color', '#993333');
+		} else {
+			$('#_character_count').css('color', '#fff');
+		}
 	}
 
 	this.question_form_submit = function(e) {

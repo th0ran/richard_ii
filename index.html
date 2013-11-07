@@ -115,7 +115,8 @@
         <br />
         <br />
         <form id="question_submit_form">
-          <input type="text" name="question" placeholder="Question" id="question-submit-form-body">
+          <input type="text" name="question" placeholder="Question" id="question-submit-form-body" onkeyup="qs.body_changed()"> 
+          <div id="_character_count">140</div>
           <input type="text" name="name" placeholder="Teacher Name" id="question-submit-form-name">
           <div class="center-form">
           <input type="school" name="school" placeholder="School" id="question-submit-form-school_name">
