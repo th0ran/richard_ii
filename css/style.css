@@ -564,7 +564,7 @@ _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 #arrow_up_btn {
 	width: 50px;
 	height: 50px;
-	content: url(../images/icons/arrow_up_btn.png) no-repeat;
+	background-image: url(../images/icons/arrow_up_btn.png);
 	position: fixed;
 	bottom: 110px;
 	right: 40px;
@@ -574,7 +574,7 @@ _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 #arrow_down_btn {
 	width: 50px;
 	height: 50px;
-	content: url(../images/icons/arrow_down_btn.png) no-repeat;
+	background-image: url(../images/icons/arrow_down_btn.png);
 	position: fixed;
 	bottom: 50px;
 	right: 40px;
