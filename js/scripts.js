@@ -1,3 +1,5 @@
+var slideindex = 1;
+
 jQuery(document).ready(function ($) {
 
 
@@ -50,6 +52,19 @@ jQuery(document).ready(function ($) {
         goToByScroll(dataslide);
 
     });
+    
+    $("#arrow_up_btn").click(function() { 
+    	slideindex--;
+    	if (slideindex < 1) slideindex=1;
+	    $('html, body').animate({scrollTop:$('#slide'+slideindex).position().top}, 'slow');   
+    });
+    
+     $("#arrow_down_btn").click(function() { 
+    	slideindex++;
+    	if (slideindex > 4) slideindex=4;
+	    $('html, body').animate({scrollTop:$('#slide'+slideindex).position().top}, 'slow');   
+    });
+    
 
 
 });
