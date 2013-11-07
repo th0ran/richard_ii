@@ -41,6 +41,15 @@ var RSCQuestionSubmission = function() {
 			return false;
 		}
 
+		if (params.body.length > 140) {
+			alert('Your question must be under 140 characters long!');
+			return false;
+		} else {
+			
+		}
+
+		
+
 		t.submit_question(params, function(d) {
 			console.log(d);
 
@@ -109,7 +118,7 @@ var RSCQuestionSubmission = function() {
 				opacity: 0,
 				top: '20px',
 			}, 500)
-		}, 3000)
+		}, 3000);
 	}
 }
 
