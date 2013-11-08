@@ -104,11 +104,38 @@
       <div style="width: 70%;">
         <div class='embed-container'>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <embed  src='http://nasta.streamingwizard.com/player.swf' width='900' height='520' allowscriptaccess='always' allowfullscreen='true' flashvars='streamer=rtmp://195.195.131.195:80/raveLive&file=richard2.flv&autostart=true'/>
         </div>
         <img class="heading" src="images/headings/click-here-for-fullscreen.png" style="margin-top: 10px;" alt="Click here for fullscreen"> <br>
         <br>
         <br>
+=======
+          <div id="rscPlayer"></div>
+
+<script>
+    jwplayer("rscPlayer").setup({
+      playlist: [{
+        image: "http://thedegreeshow.com/tx/live/rsc/Slate_test.png",
+        sources: [{
+        file: "http://thedegreeshow.com/tx/live/rsc/s1.smil"
+        },{
+          file: "http://195.195.131.195/rave/mp4:TX1HD1/playlist.m3u8"
+        }]
+      }],
+        width: 640,
+        height: 360,
+        fallback: false,
+        autostart: true,
+        primary: "flash",
+        abouttext: 'RSC For Schools Video Player',
+
+    });
+</script>
+        </div>
+        <img class="heading" src="images/headings/click-here-for-fullscreen.png" style="margin-top: 10px;" alt="Click here for fullscreen"> 
+        <br />
+>>>>>>> f1fb30f06cc2b0d5884f081a2649c201104a2e14
 =======
           <div id="rscPlayer"></div>
 
@@ -235,6 +262,9 @@
 =======
 </script>
 <script type="text/javascript" src="js/question_submission.js"></script>
+<<<<<<< HEAD
+>>>>>>> f1fb30f06cc2b0d5884f081a2649c201104a2e14
+=======
 >>>>>>> f1fb30f06cc2b0d5884f081a2649c201104a2e14
 <script>
   // Question Submission
