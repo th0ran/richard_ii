@@ -571,6 +571,8 @@ _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 	right: 40px;
 	z-index: 100;
 }
+#arrow_up_btn:hover {
+}
 
 #arrow_down_btn {
 	width: 50px;
@@ -579,6 +581,14 @@ _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 	position: fixed;
 	bottom: 50px;
 	right: 40px;
-		z-index: 100;	
+	z-index: 100;	
 }
 
+#arrow_down_btn:hover {
+}
+
+.enabled{
+	opcacity: 0.5;
+}
+
+	
