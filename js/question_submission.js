@@ -22,6 +22,23 @@ var RSCQuestionSubmission = function() {
 
 	this.add_listeners = function() {
 		$('#question_submit_form').submit(t.question_form_submit);
+
+		$('#question-submit-form-body').change(function(){
+			console.log($('#question-submit-form-body').val())
+		});
+	}
+
+	this.body_changed = function() {
+		console.log($('#question-submit-form-body').val())
+
+		var count = 140 - $('#question-submit-form-body').val().length;
+		$('#_character_count').text(140 - $('#question-submit-form-body').val().length + " character(s) left");
+
+		if (count < 0) {
+			$('#_character_count').css('color', '#993333');
+		} else {
+			$('#_character_count').css('color', '#fff');
+		}
 	}
 
 	this.question_form_submit = function(e) {
@@ -40,6 +57,15 @@ var RSCQuestionSubmission = function() {
 			alert("Sorry! You must fill out all of the fields to submit a question.")
 			return false;
 		}
+
+		if (params.body.length > 140) {
+			alert('Your question must be under 140 characters long!');
+			return false;
+		} else {
+			
+		}
+
+		
 
 		t.submit_question(params, function(d) {
 			console.log(d);
@@ -109,7 +135,7 @@ var RSCQuestionSubmission = function() {
 				opacity: 0,
 				top: '20px',
 			}, 500)
-		}, 3000)
+		}, 3000);
 	}
 }
 
