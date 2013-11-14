@@ -574,7 +574,7 @@ _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 	bottom: 99px;
 	right: 40px;
 	z-index: 100;
-	opacity: 0.95;
+	opacity: 0.9;
 }
 #arrow_down_btn {
 	width: 50px;
@@ -584,7 +584,7 @@ _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 	bottom: 50px;
 	right: 40px;
 	z-index: 100;	
-	opacity: 0.95;
+	opacity: 0.9;
 }
 #arrow_up_btn:hover, #arrow_down_btn:hover {
 	opacity: 1;
